@@ -6,8 +6,10 @@ def Home(response):
 
 
 def About(response):
-    return HttpResponse("<h1>About Page<h1>")
+    # return HttpResponse("<h1>About Page<h1>")
+    return render(response, "about.html")
 
 
 def Contact(response):
-    return HttpResponse("<h1>Contact Page<h1>")
+    # return HttpResponse("<h1>Contact Page<h1>")
+    return render(response, "contact.html")
